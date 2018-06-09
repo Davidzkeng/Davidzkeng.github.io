@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>postphp static 静态变量做缓存 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="基于静态变量不会随着函数的介绍而销毁，我们可以利用这个特点实现缓存   eg:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950/** * 用户请求重置密码的接收器 */function requestResetPassword() &amp;#123;    //检查用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="postphp static 静态变量做缓存">
+<meta property="og:url" content="http://yoursite.com/2018/06/09/postphp-static-静态变量坐缓存/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基于静态变量不会随着函数的介绍而销毁，我们可以利用这个特点实现缓存   eg:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950/** * 用户请求重置密码的接收器 */function requestResetPassword() &amp;#123;    //检查用">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-09T05:03:19.434Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="postphp static 静态变量做缓存">
+<meta name="twitter:description" content="基于静态变量不会随着函数的介绍而销毁，我们可以利用这个特点实现缓存   eg:1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950/** * 用户请求重置密码的接收器 */function requestResetPassword() &amp;#123;    //检查用">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-postphp-static-静态变量坐缓存" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-postphp-static-静态变量坐缓存" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/09/postphp-static-静态变量坐缓存/" class="article-date">
   <time datetime="2018-06-09T04:50:54.000Z" itemprop="datePublished">2018-06-09</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/09/postphp-static-静态变量坐缓存/">postphp static 静态变量做缓存</a>
+    <h1 class="article-title" itemprop="name">
+      postphp static 静态变量做缓存
     </h1>
   
 
@@ -101,166 +103,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/09/hello-world/" class="article-date">
-  <time datetime="2018-06-09T02:09:24.671Z" itemprop="datePublished">2018-06-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/09/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2018/06/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/09/hello-world/" data-id="cji7kcp6y0003ukvpn85dndgt" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-python函数传参理解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/01/python函数传参理解/" class="article-date">
-  <time datetime="2018-06-01T13:03:09.000Z" itemprop="datePublished">2018-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/python函数传参理解/">python函数传参理解</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>python 中函数传参还是传引用？<br>例子：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func1</span><span class="params">(n)</span>:</span></span><br><span class="line">    n = <span class="number">5</span></span><br><span class="line">    <span class="keyword">return</span> n</span><br><span class="line"></span><br><span class="line">o = <span class="number">4</span></span><br><span class="line">print(func1(o))  //输出<span class="number">5</span></span><br><span class="line">print(o)   //输出<span class="number">4</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(m)</span>:</span></span><br><span class="line">    m[<span class="number">0</span>] = <span class="number">20</span></span><br><span class="line">    m = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">    <span class="keyword">return</span> m</span><br><span class="line">l = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">print(func(l)) //输出[<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line">print(l)       //输出[<span class="number">20</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://www.cnblogs.com/zhijun/p/6559983.html" target="_blank" rel="noopener">具体内容可查看该链接</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/01/python函数传参理解/" data-id="cji7kcp6m0001ukvpp8v634yy" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第一次使用github搭建-hexo博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/01/第一次使用github搭建-hexo博客/" class="article-date">
-  <time datetime="2018-05-31T16:32:43.000Z" itemprop="datePublished">2018-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>安装hexo <a href="https://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">https://www.cnblogs.com/fengxiongZz/p/7707219.html</a></p>
-<p>setp1：安装node.js</p>
-<p>setp2: 创建一个仓库 格式为：账户名.github.io(需勾选readme)</p>
-<p>setp3: 创建一个文件夹，安装hexo : npm install hexo -g    (hexo -v 检查版本)<br>        hexo init  初始化文件</p>
-<p>setp4: npm install 安装所需文件</p>
-<p>setp5: hexo g,首次体验Hexo,hexo s 开启服务器  （hexo server -p 端口号可修改端口）</p>
-<p>setp6: 配置Deployment的repo值<br>        deploy:git<br>            type:git<br>            repository:git项目路径<br>            branch:master</p>
-<p>setp7: hexo new post”名字”  创建一文章</p>
-<p>setp8: hexo d -g 生成部署到网站</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/01/第一次使用github搭建-hexo博客/" data-id="cji7kcp6t0002ukvphkfe6jq4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-david" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/06/01/hello-david/" class="article-date">
-  <time datetime="2018-05-31T16:19:16.000Z" itemprop="datePublished">2018-06-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/01/hello-david/">hello david</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>第一次使用hexo</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/01/hello-david/" data-id="cji7kcp4g0000ukvpiw57he0c" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
